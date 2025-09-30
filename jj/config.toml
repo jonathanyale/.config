@@ -7,6 +7,7 @@ default-command = ["st"]
 
 [aliases]
 ll = ["log", "-T", "log_with_files"]
+cm = ["log", "-T", "log_compact"]
 
 [revset-aliases]
 'recent_work' = 'ancestors(visible_heads(), 3) & mutable()'
@@ -17,8 +18,8 @@ if(root,
   format_root_commit(self),
   label(if(current_working_copy, "working_copy"),
     concat(
-      format_short_commit_header(self) ++ "\n",
       separate(" ",
+        format_short_change_id_with_hidden_and_divergent_info(self),
         if(empty, label("empty", "(empty)")),
         if(description,
           description.first_line(),
