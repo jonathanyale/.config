@@ -55,7 +55,7 @@ alias nc 'builtin cd ~/.config; hx .'
 
 ## helix
 # cd and open log
-alias n "builtin cd ~/archives; hx log/$(date '+%Y')/$(date '+%m').stoa"
+alias n "builtin cd ~/log; hx $(date '+%Y')/$(date '+%m')"
 
 ## brew
 # info
