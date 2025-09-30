@@ -1,8 +1,19 @@
 "$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
 
-[user]
-name = "Jonathan Yale"
-email = "jonathanyale@pm.me"
-
 [ui]
 default-command = ["status"]
+
+[[--scope]]
+--when.repositories = ["/Users/luthenwald"]
+
+[--scope.user]
+name = "luthenwald"
+email = "luthenwald@pm.me"
+
+[[--scope]]
+--when.repositories = ["/Users/chanhuizhihou"]
+
+[--scope.user]
+name = "jonathanyale"
+email = "jonathanyale@pm.me"
+
