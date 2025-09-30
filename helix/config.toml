@@ -1,0 +1,83 @@
+theme = 'zengray'
+
+# https://docs.helix-editor.com/configuration.html
+[editor]
+scrolloff = 9                    # Number of lines of padding when scrolling
+mouse = false                    # Disable mouse mode
+bufferline = "multiple"          # Only show currently open buffers when more than one exists.
+shell = ["fish", "-c"]           # Shell to use when running external commands
+cursorline = false               # (never) Highlight all lines with a cursor
+true-color = true                # Force the theme to show colors
+lsp.enable = false               # Disable Lsp
+
+[editor.statusline]
+# display nothing in the statusline
+left = []
+right = []
+separator = " "
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = " "
+nbsp = "⍽"    # Non Breaking SPace
+tab = "→"
+newline = "⏎"
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = false
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "↩ " # wrap-at-text-width = true
+
+[keys.select]
+X = "select_line_above"
+
+[keys.normal]
+"ret" = [
+  "open_below",
+  "normal_mode",
+] # Maps the enter key to open_below then re-enter normal mode
+"0" = "extend_to_line_start"
+"C-0" = "extend_to_line_end"
+space.c = "toggle_comments"
+X = "extend_line_above" # Shift+x to select the whole line above
+D = [
+  "extend_to_line_end",
+  "delete_selection",
+] # Wipe and edit the current line from cursor position
+c = [
+  "trim_selections",
+  "change_selection",
+] # Make 'c' automatically strip the selection of extra whitespace
+a = [
+  "append_mode",
+  "collapse_selection",
+] # Remove the selection when entering insert mode with 'a'
+
+# Use system clipboard
+p = "paste_clipboard_before"
+y = "yank_main_selection_to_clipboard"
+
+# Mark line and move with them up/down
+# https://github.com/helix-editor/helix/discussions/5764#discussioncomment-4840408
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-k = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode

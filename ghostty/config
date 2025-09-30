@@ -1,0 +1,16 @@
+theme = zengray 
+# theme = AtomOneLight
+
+adjust-cell-height = 20%
+background-blur-radius = 14
+background-opacity = 1
+cursor-style = bar
+font-family = Iosevka Nerd Font Mono
+font-size = 14
+macos-titlebar-proxy-icon = hidden
+shell-integration = fish
+title = " "
+unfocused-split-opacity = 1
+window-decoration = none
+window-padding-x = 20
+window-padding-y = 20
