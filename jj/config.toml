@@ -6,6 +6,7 @@ merge-editor = "meld"
 default-command = ["st"]
 
 [aliases]
+l  = ["log", "-r", "all()", "-n5"]
 ll = ["log", "-T", "log_with_files"]
 cm = ["log", "-T", "log_compact"]
 
