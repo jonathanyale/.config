@@ -1,4 +1,25 @@
-@ Blogs on type theory, category theory & haskell
+@ Blogs on type theory, category theory & functional progarmming
+https://amelia.how/feed.xml                       "Amelia's Blog | type theory, programming languages"
+https://lexi-lambda.github.io/feeds/all.rss.xml   "Alexis King's Blog | haskell, racket"
+https://okmij.org/ftp/rss.xml                     "okmij's index | functional programming"
+https://blog.aiono.dev/feed.xml                   "Aiono's Blog | functional programming"
 
-https://amelia.how/feed.xml "Amelia's Blag | type theory"
+@ Blogs on rust
+https://blog.m-ou.se/index.xml      "Mara's Blog | rust"
+https://kobzol.github.io/feed.xml   "Kobzol's blog | rust"
 
+@ Blogs on software engineering   
+https://mmapped.blog/feed.xml                   "MMAP(Blog) | software engineering"
+https://www.stephendiehl.com/feed.xml           "Stephen Diehl's Blog | software engineering"
+https://strongly-typed-thoughts.net/blog/feed   "strongly-typed-thoughts.net | software engineering"
+
+@ Blogs on graphics
+https://blog.pkh.me/rss.xml   "pkh.me | graphics"
+
+@ Blogs on other programming languages
+https://peterme.net/rss/                 "Peter's DevLog | nim"
+https://brevzin.github.io/feed.xml       "Barry's C++ Blog | c++"
+https://jonathanyale.github.io/feed.xml  "λboredom's Blog | programming languages"
+
+@ Indie websites
+https://ellesho.me/page/rss.xml   "elle | art"
