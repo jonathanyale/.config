@@ -2,7 +2,7 @@ function format
     set lang $argv[1]
     switch $lang
         case hs
-            fd -Ie hs -X fourmolu -i {} \; -X stylish-haskell -i {}
+            fd -Ie hs -X stylish-haskell -i {}
         case py
             fd -Ie py -X ruff format --config ~/.config/ruff.toml {}
         case nim

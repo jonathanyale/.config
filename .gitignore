@@ -1,3 +1,4 @@
 *.lock
 *-lock.*
 *history
+fish_variables
